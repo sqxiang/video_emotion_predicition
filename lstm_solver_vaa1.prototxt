@@ -1,0 +1,19 @@
+net: "vaa1.prototxt"
+test_iter: 317
+test_state: { stage: 'test-on-test' }
+test_interval: 384
+base_lr: 0.001
+lr_policy: "step"
+gamma: 0.1
+stepsize: 5000
+display: 20
+max_iter: 20000
+momentum: 0.9
+weight_decay: 0.005
+snapshot: 200
+snapshot_prefix: "models/vaa1_18"
+solver_mode: GPU
+device_id: 1
+random_seed: 1700
+average_loss: 1000
+clip_gradients: 5
